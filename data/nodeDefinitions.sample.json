@@ -1,0 +1,92 @@
+[
+  {
+    "id": "event.graphVariableChanged",
+    "displayNameEN": "When Node Graph Variable Changes",
+    "officialID": 351,
+    "category": "Event/Graph Variables",
+    "kind": "event",
+    "ports": [
+      { "id": "flowOut", "label": "Triggered", "kind": "flow-out" },
+      { "id": "sourceEntity", "label": "Source Entity", "kind": "data-out", "valueType": "entity" },
+      { "id": "sourceGuid", "label": "Source Guid", "kind": "data-out", "valueType": "guid" },
+      { "id": "variableName", "label": "Variable Name", "kind": "data-out", "valueType": "string" },
+      { "id": "oldValue", "label": "Old Value", "kind": "data-out", "valueType": "any" },
+      { "id": "newValue", "label": "New Value", "kind": "data-out", "valueType": "any" }
+    ]
+  },
+  {
+    "id": "action.setGraphVariable",
+    "displayNameEN": "Set Node Graph Variable",
+    "officialID": 323,
+    "category": "Action/Variables",
+    "kind": "action",
+    "ports": [
+      { "id": "flowIn", "label": "Execute", "kind": "flow-in" },
+      { "id": "flowOut", "label": "Complete", "kind": "flow-out" },
+      { "id": "variableName", "label": "Variable Name", "kind": "data-in", "valueType": "string" },
+      { "id": "value", "label": "Value", "kind": "data-in", "valueType": "any" },
+      { "id": "shouldTriggerEvent", "label": "Trigger Event", "kind": "data-in", "valueType": "bool" }
+    ]
+  },
+  {
+    "id": "action.printString",
+    "displayNameEN": "Print String",
+    "officialID": 1,
+    "category": "Action/General",
+    "kind": "action",
+    "ports": [
+      { "id": "flowIn", "label": "Execute", "kind": "flow-in" },
+      { "id": "flowOut", "label": "Complete", "kind": "flow-out" },
+      { "id": "text", "label": "Text", "kind": "data-in", "valueType": "string" }
+    ]
+  },
+  {
+    "id": "action.finishLevel",
+    "displayNameEN": "Settle Stage",
+    "officialID": 77,
+    "category": "Action/Stage",
+    "kind": "action",
+    "ports": [
+      { "id": "flowIn", "label": "Execute", "kind": "flow-in" },
+      { "id": "flowOut", "label": "Complete", "kind": "flow-out" }
+    ]
+  },
+  {
+    "id": "event.graphStart",
+    "displayNameEN": "Node Graph Begins",
+    "officialID": 200042,
+    "category": "Event/Client Graph",
+    "kind": "event",
+    "ports": [
+      { "id": "flowOut", "label": "Triggered", "kind": "flow-out" }
+    ]
+  },
+  {
+    "id": "event.executeByOrderUniquely",
+    "displayNameEN": "Execute Only by Sequence",
+    "officialID": 200126,
+    "category": "Event/Client Graph",
+    "kind": "event",
+    "ports": []
+  },
+  {
+    "id": "flow.graphEndBoolean",
+    "displayNameEN": "Node Graph End (Boolean)",
+    "officialID": 200000,
+    "category": "Flow/Client Graph",
+    "kind": "flow-control",
+    "ports": [
+      { "id": "result", "label": "Result", "kind": "data-in", "valueType": "bool" }
+    ]
+  },
+  {
+    "id": "flow.graphEndInteger",
+    "displayNameEN": "Node Graph End (Integer)",
+    "officialID": 200122,
+    "category": "Flow/Client Graph",
+    "kind": "flow-control",
+    "ports": [
+      { "id": "result", "label": "Result", "kind": "data-in", "valueType": "int" }
+    ]
+  }
+]

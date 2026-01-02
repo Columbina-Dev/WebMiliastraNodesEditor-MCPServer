@@ -1,0 +1,23 @@
+[mcp_servers.nodegraph]
+command = "node"
+args = ["D:/PATH/TO/WebMiliastraNodesEditor/WebMiliastraNodesEditor-MCPServer/build/index.js"]
+cwd = "D:/PATH/TO/WebMiliastraNodesEditor/WebMiliastraNodesEditor-MCPServer/"
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+
+enabled_tools = [
+  "list_graphs",
+  "read_graph",
+  "write_graph",
+  "validate_graph",
+  "list_nodes",
+  "read_project",
+  "write_project",
+  "validate_project"
+]
+
+[mcp_servers.nodegraph.env]
+NODEGRAPH_WORKSPACE = "D:/PATH/TO/WebMiliastraNodesEditor/WebMiliastraNodesEditor-MCPServer/"
+NODEGRAPH_GRAPHS_DIR = "D:/PATH/TO/WebMiliastraNodesEditor/WebMiliastraNodesEditor-MCPServer/graphs"
+NODEGRAPH_PROJECTS_DIR = "D:/PATH/TO/WebMiliastraNodesEditor/WebMiliastraNodesEditor-MCPServer/projects"
+NODEGRAPH_NODE_DEFS_PATH = "D:/PATH/TO/WebMiliastraNodesEditor/WebMiliastraNodesEditor-MCPServer/data/nodeDefinitions.sample.json"
