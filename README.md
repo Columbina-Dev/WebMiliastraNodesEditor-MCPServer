@@ -44,7 +44,7 @@ P.S.: `data/nodeDefinitions.sample.json` 为临时测试数据集，后续需将
 
 <details>
   <summary>OpenAI Codex</summary>
-  使用 [config/.codex/config.toml](./config/.codex/config.toml)
+  使用 [config/.codex/config.toml](config/%2Ecodex/config.toml)
 </details>
 
 

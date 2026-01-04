@@ -46,7 +46,7 @@ P.S.: `data/nodeDefinitions.sample.json` is a temporary test dataset. The data s
 
 <details>
   <summary>OpenAI Codex</summary>
-  Use [config/.codex/config.toml](./config/.codex/config.toml)
+  Use [config/.codex/config.toml](config/%2Ecodex/config.toml)
 </details>
 
 
